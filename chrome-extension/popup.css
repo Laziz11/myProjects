@@ -1,0 +1,167 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f6f7fb;
+  color: #1b1e2b;
+}
+
+.app {
+  padding: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.app__header h1 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.app__header p {
+  margin: 0;
+  color: #5b637a;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.field input {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d2d7e2;
+  background: #fff;
+  font-size: 14px;
+}
+
+.select {
+  position: relative;
+  display: grid;
+}
+
+.select__input {
+  padding-right: 34px;
+}
+
+.select__toggle {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  cursor: pointer;
+  color: #5b637a;
+}
+
+.select__dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 180px;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 1px solid #d2d7e2;
+  background: #fff;
+  box-shadow: 0 12px 24px rgba(14, 18, 29, 0.12);
+  z-index: 10;
+}
+
+.select__option {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.select__option:hover,
+.select__option.is-active {
+  background: #eef2ff;
+}
+
+.hidden {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #e0e3eb;
+  color: #1b1e2b;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn--primary {
+  background: #2b5cff;
+  color: #fff;
+}
+
+.btn--ghost {
+  background: transparent;
+  border: 1px solid #d2d7e2;
+}
+
+.app__results {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #e0e3eb;
+}
+
+.results__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.results__actions {
+  display: flex;
+  gap: 6px;
+}
+
+.results__header h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.results__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.results__list li {
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #f6f7fb;
+}
+
+.results__empty {
+  color: #8b92a8;
+}
