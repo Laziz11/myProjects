@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Payments Method Recorder",
+  "description": "Records payment methods from competitor API responses.",
+  "version": "0.1.1",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Payments Method Recorder"
+  },
+  "permissions": [
+    "storage",
+    "downloads",
+    "tabs",
+    "debugger"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

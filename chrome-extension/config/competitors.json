@@ -1,0 +1,214 @@
+[
+  {
+    "id": "pinup",
+    "label": "Pinup",
+    "requestUrlIncludes": "/cashbox/deposit/methods",
+    "responseJsonPaths": [
+      "methods.*.name"
+    ]
+  },
+  {
+    "id": "bluechip",
+    "label": "Bluechip",
+    "requestUrlIncludes": "/payment-methods/in-en",
+    "responseJsonPaths": [
+      "*.aggregatorId",
+      "*.paymentMethod"
+    ]
+  },
+  {
+    "id": "megapari",
+    "label": "Megapari",
+    "requestUrlIncludes": "/paysystems/information/systems",
+    "responseJsonPaths": [
+      "deposits.*.code"
+    ]
+  },
+  {
+    "id": "spinbetter",
+    "label": "Spinbetter",
+    "requestUrlIncludes": "/paysystems/information/systems",
+    "responseJsonPaths": [
+      "deposits.*.code"
+    ]
+  },
+  {
+    "id": "10cric",
+    "label": "10Cric",
+    "requestUrlIncludes": "/graphql",
+    "responseJsonPaths": [
+      "data.groupedPaymentRoutesAllCurrencies.currencyGroups.*.groups.*.routes.*.internalName"
+    ]
+  },
+  {
+    "id": "roobet",
+    "label": "Roobet",
+    "requestUrlIncludes": "/graphql",
+    "responseJsonPaths": [
+      "data.groupedPaymentRoutesAllCurrencies.currencyGroups.*.groups.*.routes.*.internalName"
+    ]
+  },
+  {
+    "id": "crickex",
+    "label": "Crickex",
+    "requestUrlIncludes": "/payment/getDepositSetting",
+    "responseJsonPaths": [
+      "data.*.displayName"
+    ]
+  },
+  {
+    "id": "9winz",
+    "label": "9winz",
+    "requestUrlIncludes": "/userFiles-v2/9winz-18753028/data/springXConfigs/payment.json",
+    "responseJsonPaths": [
+      "deposit.*.name"
+    ]
+  },
+  {
+    "id": "khelraja",
+    "label": "Khelraja",
+    "requestUrlIncludes": "/api/v1/payment-options",
+    "responseJsonPaths": [
+      "data.*.cms_property.code"
+    ]
+  },
+  {
+    "id": "fun88",
+    "label": "Fun88",
+    "requestUrlIncludes": "/payment/get_chanels",
+    "responseJsonPaths": [
+      "data.*.name"
+    ]
+  },
+  {
+    "id": "ultrawin",
+    "label": "Ultrawin",
+    "requestUrlIncludes": "/payment-settings/payment-methods",
+    "responseJsonPaths": [
+      "depositMethods.*.*"
+    ]
+  },
+  {
+    "id": "betvibe",
+    "label": "Betvibe",
+    "requestUrlIncludes": "/cms/public/general-translations",
+    "responseJsonPaths": [
+      "OnlineCashier.PaymentMethods.@key"
+    ]
+  },
+  {
+    "id": "linebet",
+    "label": "Linebet",
+    "requestUrlIncludes": "/paysystems/information/systems",
+    "responseJsonPaths": [
+      "deposits.*.code"
+    ]
+  },
+  {
+    "id": "fresh-casino",
+    "label": "Fresh Casino",
+    "requestUrlIncludes": "/payment_methods",
+    "responseJsonPaths": [
+      "payment_methods.*.system_name"
+    ]
+  },
+  {
+    "id": "12bet",
+    "label": "12bet",
+    "requestUrlIncludes": "/Payment/GetMobilePayGroupList",
+    "responseJsonPaths": [
+      "data.*.channelName"
+    ]
+  },
+  {
+    "id": "20bet",
+    "label": "20bet",
+    "requestUrlIncludes": "/user/pay-session-deposit",
+    "responseJsonPaths": [
+      "data.payment_methods.*.id"
+    ]
+  },
+  {
+    "id": "topx",
+    "label": "TopX",
+    "requestUrlIncludes": "/payment/providers/groups/INR/invoice",
+    "responseJsonPaths": [
+      "*.provider"
+    ]
+  },
+  {
+    "id": "playbit",
+    "label": "PlayBit",
+    "requestUrlIncludes": "/deposit.php",
+    "responseJsonPaths": [
+      "data.*.provider_name",
+      "data.provider"
+    ]
+  },
+  {
+    "id": "slottery",
+    "label": "Slottery",
+    "requestUrlIncludes": "/GetRechargeTypes",
+    "responseJsonPaths": [
+      "data.rechargetypelist.*.payName"
+    ]
+  },
+  {
+    "id": "glory",
+    "label": "Glory",
+    "requestUrlIncludes": "/payments/payment_methods",
+    "responseJsonPaths": [
+      "paymentMethods.*.name",
+      "paymentMethods.*.paymentSystem.name"
+    ]
+  },
+  {
+    "id": "jack-bit",
+    "label": "Jack bit",
+    "requestUrlIncludes": "/payment/getpaymentpage",
+    "responseJsonPaths": [
+      "response.paymentChannels.*.systemName",
+      "response.paymentProviders.*.paymentProviderName"
+    ]
+  },
+  {
+    "id": "rajabets",
+    "label": "Rajabets",
+    "requestUrlIncludes": "/payment-methods",
+    "responseJsonPaths": [
+      "data.*.info.provider_name"
+    ]
+  },
+  {
+    "id": "bc-game",
+    "label": "Bc.Game",
+    "requestUrlIncludes": "/payment/deposit/fiat/INRFIAT/methods/",
+    "responseJsonPaths": [
+      "data.*.provider"
+    ]
+  },
+  {
+    "id": "jb-com",
+    "label": "JB.com",
+    "requestUrlIncludes": "/payment/deposit/fiat/INRFIAT/methods/",
+    "responseJsonPaths": [
+      "data.*.provider"
+    ]
+  },
+  {
+    "id": "patang-casino",
+    "label": "Patang casino",
+    "requestUrlIncludes": "/payment_methods",
+    "responseJsonPaths": [
+      "payment_methods.*.system_name"
+    ]
+  },
+  {
+    "id": "puntit",
+    "label": "Puntit",
+    "requestUrlIncludes": "/deposit/payment_methods.json",
+    "responseJsonPaths": [
+      "*.name"
+    ]
+  }
+]

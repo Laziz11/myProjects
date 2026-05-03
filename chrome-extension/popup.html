@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments Method Recorder</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Payments Method Recorder</h1>
+        <p>Pick a competitor and start recording payment methods.</p>
+      </header>
+
+      <section class="app__controls">
+        <label class="field">
+          <span>Competitor</span>
+          <div class="select">
+            <input
+              id="competitorInput"
+              class="select__input"
+              placeholder="Search competitor"
+              autocomplete="off"
+            />
+            <button id="toggleListBtn" class="select__toggle" type="button" aria-label="Toggle competitors">
+              ▼
+            </button>
+            <div id="competitorDropdown" class="select__dropdown hidden" role="listbox"></div>
+          </div>
+        </label>
+
+        <div class="buttons">
+          <button id="startBtn" class="btn btn--primary" disabled>Start recording</button>
+          <button id="stopBtn" class="btn" disabled>Stop recording</button>
+        </div>
+      </section>
+
+      <section class="app__results">
+        <div class="results__header">
+          <h2>Captured methods</h2>
+          <div class="results__actions">
+            <button id="clearBtn" class="btn btn--ghost" disabled>Clear</button>
+            <button id="exportBtn" class="btn btn--ghost" disabled>Export CSV</button>
+          </div>
+        </div>
+        <ul id="resultsList" class="results__list">
+          <li class="results__empty">No results yet.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
